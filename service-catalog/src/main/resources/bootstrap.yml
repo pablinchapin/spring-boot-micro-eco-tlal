@@ -1,0 +1,17 @@
+server :
+  port : 3901
+
+spring :
+  #main :
+    #allow-bean-definition-overriding : true
+  application :
+    name : ltl-service-catalog
+  cloud :
+    config :
+      uri : http://localhost:3900
+
+management :
+  endpoints :
+    web :
+      exposure :
+        include : "*"
